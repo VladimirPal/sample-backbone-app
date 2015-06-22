@@ -4,7 +4,7 @@ var Handlebars = require("handlebars");
   },"useData":true});
 module.exports["test_table"] = module.exports["test_table"] || {};
 module.exports["test_table"]["table"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"col-lg-12\">\n  <div class=\"ibox-content\">\n    <table class=\"table\">\n      <thead>\n        <tr>\n          <th data-sort_field=\"id\">#</th>\n          <th data-sort_field=\"name\">Name</th>\n        </tr>\n      </thead>\n      <tbody></tbody>\n    </table>\n  </div>\n</div>\n";
+  return "<div class=\"col-lg-12\">\n  <div class=\"ibox-content\">\n    <table class=\"table\">\n      <thead>\n        <tr>\n          <th data-sort_field=\"id\">#</th>\n          <th id=\"desc\" data-sort_field=\"name\">Name</th>\n        </tr>\n      </thead>\n      <tbody></tbody>\n    </table>\n  </div>\n</div>\n";
   },"useData":true});
 module.exports["test_table"]["table_item"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
